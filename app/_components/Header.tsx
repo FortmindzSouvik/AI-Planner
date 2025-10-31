@@ -1,5 +1,6 @@
 "use client";
 import { Button } from '@/components/ui/button';
+import { SignInButton } from '@clerk/nextjs';
 import Image from 'next/image';
 import Link from 'next/link';
 import React, { PureComponent } from 'react'
@@ -26,7 +27,9 @@ export class Header extends PureComponent {
             </Link>
           )}
         </div>
-        <Button>Get Started</Button>
+        <SignInButton mode='modal'>
+          <Button>Get Started</Button>
+        </SignInButton>
       </div>
     )
   }
