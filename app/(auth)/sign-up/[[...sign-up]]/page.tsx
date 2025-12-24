@@ -1,4 +1,5 @@
 
+"use client";
 import { SignUp, useUser } from '@clerk/nextjs'
 import { currentUser } from '@clerk/nextjs/server';
 import axios from 'axios';
