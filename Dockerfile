@@ -1,0 +1,27 @@
+
+# ----------------------------
+# 1️⃣ Build stage
+# ----------------------------
+FROM node:alpine AS builder
+
+WORKDIR /app
+
+
+# Install dependencies
+COPY package*.json ./
+RUN npm ci
+
+# Copy source
+COPY . .
+
+EXPOSE  3000
+CMD npm run dev
+
+
+
+
+
+
+
+
+
