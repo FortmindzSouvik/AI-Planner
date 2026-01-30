@@ -17,7 +17,7 @@ COPY . .
 RUN npm run build
 
 # # Remove dev dependencies
-RUN npm prune --production
+# RUN npm prune --production
 
 
 
@@ -28,7 +28,7 @@ RUN npm prune --production
 
 
 EXPOSE  3000
-CMD ["npm", "run", "start"]
+CMD ["npm","start"]
 
 
 
